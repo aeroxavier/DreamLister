@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DreamLister</string>
+    <string name="hold_item">Hold item to do operations</string>
+</resources>

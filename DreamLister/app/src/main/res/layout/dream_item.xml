@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dreamNa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/dreamImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="37dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/descript"
+        android:layout_marginEnd="18dp" />
+
+    <TextView
+        android:id="@+id/descript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dreamImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Description" />
+
+    <TextView
+        android:id="@+id/dreamName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_above="@+id/dreamPrice"
+        android:layout_toEndOf="@+id/dreamImage" />
+
+    <TextView
+        android:id="@+id/dreamPrice"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_above="@+id/descript"
+        android:layout_toEndOf="@+id/dreamImage" />
+</RelativeLayout>
